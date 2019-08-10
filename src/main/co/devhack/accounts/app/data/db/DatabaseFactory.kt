@@ -21,12 +21,12 @@ object DatabaseFactory {
     private fun hirakiInit(): HikariDataSource {
         val config = HikariConfig()
         config.driverClassName = "com.mysql.cj.jdbc.Driver"
-        config.jdbcUrl = "jdbc:mysql://35.188.103.111:3306/accountdb"
+        config.jdbcUrl = "jdbc:mysql://localhost:3306/accountdb"
         config.maximumPoolSize = 3
         config.isAutoCommit = false
         config.transactionIsolation = "TRANSACTION_REPEATABLE_READ"
         config.username = "root"
-        config.password = "011235813AcE"
+        config.password = "XXXXXXX"
         config.validate()
         return HikariDataSource(config)
     }
